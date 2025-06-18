@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Languages from "./components/Languages";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Hero />
       <Languages />
+      <Projects />
     </div>
   );
 }

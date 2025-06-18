@@ -13,11 +13,11 @@ function Component() {
             Nohan
           </span>
         </h1>
-        <p className="presentation-description text-gray-400 font-medium leading-6 text-center">
+        <p className="presentation-description text-gray-400 font-medium leading-6 text-center text-base">
           Based in the FR, I’m a front-end developer passionate about building
           accessible web apps that users love.
         </p>
-        <button className="cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px]">
+        <button className="cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white text-base font-bold leading-6 tracking-[2.286px]">
           CONTACT ME
         </button>
       </div>
