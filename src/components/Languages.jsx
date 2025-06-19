@@ -2,32 +2,32 @@ const languages = [
   {
     id: 1,
     langue: "HTML",
-    experience: "1 Years Experience",
+    experience: 1,
   },
   {
     id: 2,
     langue: "CSS",
-    experience: "1 Years Experience",
+    experience: 1,
   },
   {
     id: 3,
     langue: "Javascript",
-    experience: "1 Years Experience",
+    experience: 1,
   },
   {
     id: 4,
     langue: "Accessibility",
-    experience: "1 Years Experience",
+    experience: 1,
   },
   {
     id: 5,
     langue: "React",
-    experience: "1 Years Experience",
+    experience: 1,
   },
   {
     id: 6,
     langue: "Tailwind",
-    experience: "1 Years Experience",
+    experience: 1,
   },
 ];
 
@@ -42,8 +42,8 @@ function Component() {
           <span className="language-text text-white text-center text-3xl font-bold leading-10 tracking-[-1px]">
             {language.langue}
           </span>
-          <span className="experience-text text-center text-base to-gray-400 font-medium leading-6">
-            {language.experience}
+          <span className="experience-text text-center text-base text-gray-400 font-medium leading-6">
+            {language.experience} Years Experience
           </span>
         </li>
       ))}
