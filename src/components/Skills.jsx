@@ -1,4 +1,4 @@
-const languages = [
+const skills = [
   {
     id: 1,
     langue: "HTML",
@@ -33,17 +33,14 @@ const languages = [
 
 function Component() {
   return (
-    <ul className="language-list flex flex-col items-center gap-6 border-t border-b border-solid w-[calc(100%-32px)] min-w-[344px] max-w-[1110px] py-10 mb-20">
-      {languages.map((language) => (
-        <li
-          className="language-item flex flex-col items-center"
-          key={language.id}
-        >
-          <span className="language-text text-white text-center text-3xl font-bold leading-10 tracking-[-1px]">
-            {language.langue}
+    <ul className="skill-list flex flex-col gap-6 border-t border-b border-solid w-full min-w-[344px] max-w-[1110px] py-10 mb-20">
+      {skills.map((skill) => (
+        <li className="skill-item flex flex-col" key={skill.id}>
+          <span className="skill-text text-white text-center text-3xl font-bold leading-10 tracking-[-1px]">
+            {skill.langue}
           </span>
           <span className="experience-text text-center text-base text-gray-400 font-medium leading-6">
-            {language.experience} Years Experience
+            {skill.experience} Years Experience
           </span>
         </li>
       ))}
