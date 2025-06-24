@@ -51,7 +51,7 @@ const projects = [
 
 function Component() {
   return (
-    <div className="projects-container flex flex-col gap-5 pt-10 w-full max-w-[1110px] mx-4">
+    <div className="projects-container flex flex-col items-center gap-5 pt-10 w-11/12 max-w-[1110px]">
       <div className="header-projects-wrapper flex justify-between w-full">
         <h2 className="title-header-projects text-white text-4xl font-bold leading-10 tracking-[-1.136px]">
           Projects

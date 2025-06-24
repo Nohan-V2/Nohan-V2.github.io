@@ -1,6 +1,6 @@
 function Component() {
   return (
-    <header className="header-container flex flex-col items-center gap-5 pt-5 px-2.5 w-full max-w-[1110px]">
+    <header className="header-container flex flex-col items-center gap-5 pt-5 px-2.5 w-11/12 max-w-[1110px] md:flex-row">
       <span className="text-white header-title font-serif font-bold text-2xl leading-8 tracking-[-0.333px]">
         Nohan-V2
       </span>

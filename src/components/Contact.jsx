@@ -1,9 +1,9 @@
 function Component() {
   return (
-    <div className="contact-container bg-gray-800 w-full py-16">
-      <div className="contact-wrapper flex flex-col mx-4">
-        <div className="contact-container-wrapper flex flex-col items-center text-center w-full md:flex-row">
-          <div className="title-contact-wrapper flex flex-col gap-5 text-center mb-12 min-w-full max-w-[1110px] md:text-left">
+    <div className="contact-container flex flex-col items-center bg-gray-800 w-full py-16">
+      <div className="contact-wrapper flex flex-col items-center w-11/12 max-w-[1110px]">
+        <div className="contact-container-wrapper flex flex-col items-center text-center lg:flex-row lg:justify-between">
+          <div className="title-contact-wrapper flex flex-col gap-5 text-center mb-12 md:text-left w-full">
             <h2 className="title-contact text-white text-4xl font-bold leading-10 tracking-[-1.136px]">
               Contact
             </h2>
@@ -16,7 +16,7 @@ function Component() {
 
           <form
             action=""
-            className="formulaire-contact flex flex-col gap-8 mb-20 min-w-full max-w-[1110px]"
+            className="formulaire-contact flex flex-col gap-8 mb-20 w-full"
           >
             <input
               type="text"
@@ -41,7 +41,7 @@ function Component() {
           </form>
         </div>
 
-        <div className="social-contact-wrapper flex flex-col items-center gap-5 min-w-full max-w-[1110px] border-t border-solid">
+        <div className="social-contact-wrapper flex flex-col items-center gap-5 border-t border-solid pt-10 w-full">
           <span className="footer-title text-white font-bold text-2xl leading-8 tracking-[-0.333px]">
             Nohan-V2
           </span>
