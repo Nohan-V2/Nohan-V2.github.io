@@ -1,12 +1,12 @@
 function Component() {
   return (
-    <div className="hero-container flex flex-col gap-10 min-w-[344px] max-w-[1110px]">
+    <div className="hero-container flex flex-col items-center gap-10 mx-4 w-full max-w-[1110px]">
       <img
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F5660511.jpg&f=1&nofb=1&ipt=bfbb12dd846f98c0f1010b85115b7087d2d5e661060bced04a8383bf96739d39"
         alt="Shrek"
-        className="profil-image min-w-[174px] max-w-[444px] object-cover"
+        className="profil-image w-[174px] max-w-[444px] object-cover"
       />
-      <div className="hero-text-wrapper flex flex-col gap-6 mx-4 mb-20">
+      <div className="hero-text-wrapper flex flex-col gap-6 mx-4">
         <h1 className="hero-title text-center text-white font-bold text-5xl leading-10 tracking-[-1.136px]">
           Nice to meet you! I’m{" "}
           <span className="special-hero-title underline decoration-green-400">

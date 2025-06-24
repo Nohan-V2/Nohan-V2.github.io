@@ -33,7 +33,7 @@ const skills = [
 
 function Component() {
   return (
-    <ul className="skill-list flex flex-col gap-6 border-t border-b border-solid w-full min-w-[344px] max-w-[1110px] py-10 mb-20">
+    <ul className="skill-list flex flex-col gap-6 border-t border-b border-solid w-full max-w-[1110px] py-10 mx-4">
       {skills.map((skill) => (
         <li className="skill-item flex flex-col" key={skill.id}>
           <span className="skill-text text-white text-center text-3xl font-bold leading-10 tracking-[-1px]">
