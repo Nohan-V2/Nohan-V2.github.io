@@ -10,7 +10,7 @@ function Component() {
             <a href="#">
               <img
                 className="image-nav-item"
-                src="//akar-icons_github-fill.svg"
+                src="/akar-icons_github-fill.svg"
                 alt="Github"
               />
             </a>
@@ -19,7 +19,7 @@ function Component() {
             <a href="#">
               <img
                 className="image-nav-item"
-                src="//simple-icons_frontendmentor.svg"
+                src="/simple-icons_frontendmentor.svg"
                 alt="My site"
               />
             </a>
@@ -28,7 +28,7 @@ function Component() {
             <a href="#">
               <img
                 className="image-nav-item"
-                src="//LinkedIn.svg"
+                src="/LinkedIn.svg"
                 alt="LinkedIn"
               />
             </a>
@@ -37,7 +37,7 @@ function Component() {
             <a href="#">
               <img
                 className="image-nav-item"
-                src="//akar-icons_twitter-fill.svg"
+                src="/akar-icons_twitter-fill.svg"
                 alt="Twitter"
               />
             </a>
