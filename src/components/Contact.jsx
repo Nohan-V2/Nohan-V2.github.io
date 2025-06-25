@@ -49,7 +49,7 @@ function Component() {
             <li className="footer-social-item">
               <a href="#" className="footer-social-link">
                 <img
-                  src="/src/images/akar-icons_github-fill.svg"
+                  src="//akar-icons_github-fill.svg"
                   alt="Github"
                   className="footer-image-social"
                 />
@@ -58,7 +58,7 @@ function Component() {
             <li className="footer-social-item">
               <a href="#" className="footer-social-link">
                 <img
-                  src="/src/images/simple-icons_frontendmentor.svg"
+                  src="//simple-icons_frontendmentor.svg"
                   alt="My site"
                   className="footer-image-social"
                 />
@@ -67,7 +67,7 @@ function Component() {
             <li className="footer-social-item">
               <a href="#" className="footer-social-link">
                 <img
-                  src="/src/images/LinkedIn.svg"
+                  src="//LinkedIn.svg"
                   alt="LinkedIn"
                   className="footer-image-social"
                 />
@@ -76,7 +76,7 @@ function Component() {
             <li className="footer-social-item">
               <a href="#" className="footer-social-link">
                 <img
-                  src="/src/images/akar-icons_twitter-fill.svg"
+                  src="//akar-icons_twitter-fill.svg"
                   alt="Twitter"
                   className="footer-image-social"
                 />
