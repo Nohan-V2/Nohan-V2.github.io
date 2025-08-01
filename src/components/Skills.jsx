@@ -31,15 +31,18 @@ const skills = [
   },
 ];
 
-function Component() {
+function Skills() {
   return (
-    <ul className="skill-list flex flex-col items-center gap-6 border-t border-b border-solid max-w-[1110px] py-10 w-11/12">
+    <ul className="skill-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-8 md:gap-y-14 border-t border-b border-gray-600 max-w-[1110px] py-10 w-11/12 md:border-b-0">
       {skills.map((skill) => (
-        <li className="skill-item flex flex-col" key={skill.id}>
-          <span className="skill-text text-white text-center text-3xl font-bold leading-10 tracking-[-1px]">
+        <li
+          className="skill-item flex flex-col items-center md:items-start"
+          key={skill.id}
+        >
+          <span className="skill-text text-white text-center md:text-left text-3xl md:text-5xl font-bold leading-10 md:leading-[56px] tracking-[-1px] md:tracking-[-1.5px]">
             {skill.langue}
           </span>
-          <span className="experience-text text-center text-base text-gray-400 font-medium leading-6">
+          <span className="experience-text text-center md:text-left text-base text-gray-400 font-medium leading-6">
             {skill.experience} Years Experience
           </span>
         </li>
@@ -48,4 +51,4 @@ function Component() {
   );
 }
 
-export default Component;
+export default Skills;
