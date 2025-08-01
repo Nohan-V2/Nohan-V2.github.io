@@ -73,12 +73,18 @@ function Hero() {
           Based in the FR, I’m a front-end developer passionate about building
           accessible web apps that users love.
         </p>
-        <a
-          href="#contact"
-          className="cursor-pointer contact-me-button uppercase decoration-green-400 underline underline-offset-[10px] text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400 self-center md:self-start"
+        <button
+          onClick={() => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="bg-transparent border-none p-0 cursor-pointer contact-me-button uppercase decoration-green-400 underline underline-offset-[10px] text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400 self-center md:self-start"
+          aria-label="Aller à la section contact"
         >
           CONTACT ME
-        </a>
+        </button>
       </div>
       <img
         src="/pattern-rings.svg"

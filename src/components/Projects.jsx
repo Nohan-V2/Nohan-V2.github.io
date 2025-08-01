@@ -56,9 +56,18 @@ function Projects() {
         <h2 className="title-header-projects text-white text-4xl md:text-7xl lg:text-[88px] font-bold leading-10 md:leading-[88px] tracking-[-1.136px] md:tracking-[-2.5px]">
           Projects
         </h2>
-        <a href="#contact" className="button-header-projects text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400">
+        <button
+          onClick={() => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="bg-transparent border-none p-0 text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400"
+          aria-label="Aller à la section contact"
+        >
           CONTACT ME
-        </a>
+        </button>
       </div>
       <ul className="projects-list grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
         {projects.map((project) => (
