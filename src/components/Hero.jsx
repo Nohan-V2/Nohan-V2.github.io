@@ -53,7 +53,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero-container flex flex-col items-center gap-10 w-11/12 max-w-[1110px] md:flex-row-reverse md:justify-between relative pt-10 md:pt-0">
+    <div className="hero-container flex flex-col items-center gap-10 w-11/12 max-w-[1110px] md:flex-row-reverse md:justify-between relative pt-10 md:pt-0 overflow-hidden">
       <img
         src="https://avatars.githubusercontent.com/u/181266553"
         alt="Nohan"
@@ -86,11 +86,6 @@ function Hero() {
           CONTACT ME
         </button>
       </div>
-      <img
-        src="/pattern-rings.svg"
-        alt=""
-        className="absolute top-20 -left-2/4 md:left-0"
-      />
     </div>
   );
 }

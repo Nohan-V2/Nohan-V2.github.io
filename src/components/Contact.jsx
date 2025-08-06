@@ -62,14 +62,9 @@ function Contact() {
       id="contact"
       className="contact-container flex flex-col items-center bg-[#242424] w-full py-16 px-4 md:px-8 lg:px-0"
     >
-      <img
-        src="/pattern-rings.svg"
-        alt=""
-        className="absolute right-0 bottom-20"
-      />
-      <div className="contact-wrapper flex flex-col items-center w-11/12 max-w-[1110px]">
-        <div className="contact-container-wrapper flex flex-col items-center text-center lg:flex-row lg:justify-between w-full">
-          <div className="title-contact-wrapper flex flex-col gap-5 text-center mb-12 md:text-left w-full lg:max-w-[445px]">
+      <div className="contact-wrapper z-1 flex flex-col items-center w-11/12 max-w-[1110px]">
+        <div className="contact-container-wrapper flex flex-col items-center text-center text-pretty lg:flex-row lg:justify-between w-full">
+          <div className="title-contact-wrapper flex flex-col gap-5 text-center text-pretty mb-12 md:text-left w-full lg:max-w-[445px]">
             <h2 className="title-contact text-white text-4xl md:text-7xl lg:text-[88px] font-bold leading-10 md:leading-[88px] tracking-[-1.136px] md:tracking-[-2.5px]">
               Contact
             </h2>
@@ -93,7 +88,7 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`contact-name pl-6 pb-4 border-b outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
+                  className={`contact-name pl-6 pb-4 border-b border-white outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
                     errors.name
                       ? "border-red-500"
                       : "border-white focus:border-green-400"
@@ -123,7 +118,7 @@ function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`contact-email pl-6 pb-4 border-b outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
+                  className={`contact-email pl-6 pb-4 border-b border-white outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
                     errors.email
                       ? "border-red-500"
                       : "border-white focus:border-green-400"
@@ -152,7 +147,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className={`contact-message pl-6 pb-4 border-b border-solid outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
+                  className={`contact-message pl-6 pb-4 border-b border-solid border-white outline-none text-white font-medium leading-6 tracking-[-0.222px] placeholder:opacity-50 bg-transparent w-full ${
                     errors.message
                       ? "border-red-500"
                       : "border-white focus:border-green-400"
@@ -184,7 +179,7 @@ function Contact() {
           </form>
         </div>
 
-        <div className="social-contact-wrapper flex flex-col items-center gap-5 border-t border-gray-600 pt-10 w-full md:flex-row md:justify-between">
+        <div className="social-contact-wrapper flex flex-col items-center gap-5 border-t border-white pt-10 w-full md:flex-row md:justify-between">
           <span className="footer-title text-white font-bold text-2xl leading-8 tracking-[-0.333px]">
             Nohan-V2
           </span>
