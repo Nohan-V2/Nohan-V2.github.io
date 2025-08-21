@@ -62,7 +62,7 @@ function Contact() {
       id="contact"
       className="contact-container flex flex-col items-center bg-[#242424] w-full py-16 px-4 md:px-8 lg:px-0"
     >
-      <div className="contact-wrapper z-1 flex flex-col items-center w-11/12 max-w-[1110px]">
+      <div className="contact-wrapper z-1 flex flex-col items-center w-11/12 max-w-[1440px]">
         <div className="contact-container-wrapper flex flex-col items-center text-center text-pretty lg:flex-row lg:justify-between w-full">
           <div className="title-contact-wrapper flex flex-col gap-5 text-center text-pretty mb-12 md:text-left w-full lg:max-w-[445px]">
             <h2 className="title-contact text-white text-4xl md:text-7xl lg:text-[88px] font-bold leading-10 md:leading-[88px] tracking-[-1.136px] md:tracking-[-2.5px]">

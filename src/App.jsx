@@ -11,14 +11,14 @@ function App() {
       <img 
         src="/blue-design-left.svg" 
         alt="" 
-        className="absolute -z-1 top-33 -left-25 w-[530px] h-[129px]" 
+        className="absolute -z-1 top-33 left-0 w-[530px] h-[129px]"
       />
       
       {/* Décoration en haut à droite */}
       <img 
         src="/blue-oval.svg" 
         alt="" 
-        className="absolute -z-1 top-112 right-128 w-[129px] h-[129px]" 
+        className="absolute z-20 top-100 right-150 w-[129px] h-[129px]"
       />
       
       <Header />
@@ -30,14 +30,14 @@ function App() {
       <img 
         src="/blue-design-right.svg" 
         alt="" 
-        className="absolute -z-1 top-269 -right-60 w-[530px] h-[129px]" 
+        className="absolute -z-1 top-217 -right-40 w-[530px] h-[129px]"
       />
       
       {/* Décoration en bas à gauche (rotation de 180 degrés) */}
       <img 
         src="/blue-design-left.svg" 
         alt="" 
-        className="absolute z-0 bottom-55 -left-51 w-[530px] h-[129px]" 
+        className="absolute z-0 bottom-35 -left-51 w-[530px] h-[129px]"
       />
       
       <Contact />

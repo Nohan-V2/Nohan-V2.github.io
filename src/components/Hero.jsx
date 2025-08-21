@@ -53,11 +53,11 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero-container flex flex-col items-center gap-10 w-11/12 max-w-[1110px] md:flex-row-reverse md:justify-between relative pt-10 md:pt-0 overflow-hidden">
+    <div className="hero-container flex flex-col items-center gap-10 w-11/12 max-w-[1440px] md:flex-row-reverse md:justify-between relative pt-10 md:pt-0 overflow-hidden">
       <img
         src="https://avatars.githubusercontent.com/u/181266553"
         alt="Nohan"
-        className="profil-image w-[174px] md:w-[322px] lg:w-[445px] object-contain z-10 rounded-full"
+        className="profil-image w-[174px] md:w-[322px] lg:w-[445px] object-contain z-10 rounded-3xl"
       />
       <div className="hero-text-wrapper flex flex-col gap-6 w-11/12 md:w-full md:items-start z-10 relative">
         <h1 className="hero-title text-center text-white font-bold text-[40px] leading-10 tracking-[-1.14px] md:text-7xl md:leading-[88px] md:tracking-[-2.5px] lg:text-[88px] md:text-left">
