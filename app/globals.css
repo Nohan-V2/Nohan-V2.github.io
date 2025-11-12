@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-space: "Space Grotesk", sans-serif;
 }
 
@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Animations globales */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -42,13 +41,11 @@ html {
   }
 }
 
-/* Smooth transitions pour les éléments interactifs */
 a,
 button {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Amélioration des transitions pour les projets */
 .project-item {
   transition: transform 0.3s ease-out;
 }
@@ -57,19 +54,15 @@ button {
   transform: translateY(-5px);
 }
 
-/* Animation pour les images de projets */
 .project-image {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.5s ease-out;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-out;
 }
 
-/* Amélioration du backdrop blur */
 .backdrop-blur-sm {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Scrollbar personnalisée */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -87,7 +80,6 @@ button {
   background: #22c55e;
 }
 
-/* Animation de chargement améliorée */
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -98,20 +90,17 @@ button {
   animation: spin 1s linear infinite;
 }
 
-/* Amélioration des transitions pour les tags */
 .project-tag {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: default;
 }
 
-/* Smooth scroll amélioré */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
 }
 
-/* Respect de la préférence de mouvement réduit */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

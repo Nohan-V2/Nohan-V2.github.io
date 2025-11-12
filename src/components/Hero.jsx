@@ -1,6 +1,9 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
+import Image from "next/image";
 
 gsap.registerPlugin(TextPlugin);
 
@@ -54,10 +57,13 @@ function Hero() {
 
   return (
     <div className="hero-container flex flex-col items-center gap-10 w-11/12 max-w-[1440px] md:flex-row-reverse md:justify-between relative pt-10 md:pt-0 overflow-hidden">
-      <img
+      <Image
         src="https://avatars.githubusercontent.com/u/181266553"
         alt="Nohan"
-        className="profil-image w-[174px] md:w-[322px] lg:w-[445px] object-contain z-10 rounded-3xl"
+        width={445}
+        height={445}
+        className="profil-image z-10 h-auto w-[174px] rounded-3xl object-contain md:w-[322px] lg:w-[445px]"
+        priority
       />
       <div className="hero-text-wrapper flex flex-col gap-6 w-11/12 md:w-full md:items-start z-10 relative">
         <h1 className="hero-title text-center text-white font-bold text-[40px] leading-10 tracking-[-1.14px] md:text-7xl md:leading-[88px] md:tracking-[-2.5px] lg:text-[88px] md:text-left">
@@ -80,7 +86,7 @@ function Hero() {
               contactSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="bg-transparent border-none p-0 cursor-pointer contact-me-button uppercase decoration-green-400 underline underline-offset-[10px] text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400 self-center md:self-start"
+          className="bg-transparent border-none p-0 cursor-pointer contact-me-button uppercase decoration-green-400 underline underline-offset-10 text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400 self-center md:self-start"
           aria-label="Aller à la section contact"
         >
           CONTACT ME

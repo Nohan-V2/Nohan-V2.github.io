@@ -1,3 +1,5 @@
+"use client";
+
 const skills = [
   {
     id: 1,

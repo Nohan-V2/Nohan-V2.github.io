@@ -1,3 +1,5 @@
+"use client";
+
 const projects = [
   {
     id: 1,
@@ -63,7 +65,7 @@ function Projects() {
               contactSection.scrollIntoView({ behavior: "smooth" });
             }
           }}
-          className="bg-transparent border-none p-0 text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400"
+          className="bg-transparent border-none p-0 text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-10 text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400"
           aria-label="Aller à la section contact"
         >
           CONTACT ME
@@ -85,7 +87,7 @@ function Projects() {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
+                  className="presentation-button uppercase decoration-green-400 underline underline-offset-10 text-white text-base font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
                 >
                   VIEW PROJECT
                 </a>
@@ -93,7 +95,7 @@ function Projects() {
                   href={project.code}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 mt-8"
+                  className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-10 text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 mt-8"
                 >
                   VIEW CODE
                 </a>
@@ -113,7 +115,7 @@ function Projects() {
               <ul className="project-cta-wrapper flex gap-8 md:hidden">
                 <li className="project-cta-item">
                   <a
-                    className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
+                    className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-10 text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -123,7 +125,7 @@ function Projects() {
                 </li>
                 <li className="project-cta-.item">
                   <a
-                    className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-[10px] text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
+                    className="project-cta-link text-base cursor-pointer presentation-button uppercase decoration-green-400 underline underline-offset-10 text-white font-bold leading-6 tracking-[2.286px] hover:text-green-400 active:text-gray-400"
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
