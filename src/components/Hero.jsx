@@ -1,16 +1,16 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
 
-const words = ["Nohan", "Dev Front-End", "Gamer", "Artist", "Otaku"];
+const words = ["Nohan", "Dev Full-Stack", "Gamer", "Artist", "Otaku"];
 
 function Hero() {
   const textRef = useRef(null);
   const cursorRef = useRef(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const textEl = textRef.current;
     const cursorEl = cursorRef.current;
 
@@ -70,7 +70,7 @@ function Hero() {
           </span>
         </h1>
         <p className="hero-description text-gray-400 font-medium leading-6 text-center text-base md:text-lg md:leading-8 md:text-left md:max-w-[445px]">
-          Based in the FR, I’m a front-end developer passionate about building
+          Based in the FR, I’m a full-stack developer passionate about building
           accessible web apps that users love.
         </p>
         <button

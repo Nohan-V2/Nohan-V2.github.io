@@ -1,51 +1,51 @@
 const projects = [
   {
     id: 1,
-    title: "DESIGN PORTFOLIO",
-    image: "/image-portfolio-1.webp",
-    languages: ["HTML", "CSS"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/design-portfolio",
+    title: "VALOROULETTE",
+    image: "/valoroulette.png",
+    languages: ["TypeScript", "CSS"],
+    live: "https://valoroulette-six.vercel.app/",
+    code: "https://github.com/Nohan-V2/Valoroulette",
   },
   {
     id: 2,
-    title: "E-LEARNING LANDING PAGE",
-    image: "/image-portfolio-2.webp",
-    languages: ["HTML", "CSS"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/e-learning-landing-page",
+    title: "TP CONNECT FOR GAME",
+    image: "/puissance4.png",
+    languages: ["HTML", "CSS", "JavaScript"],
+    live: "https://nohan-v2.github.io/TP-connect-for-game",
+    code: "https://github.com/Nohan-V2/TP-connect-for-game",
   },
   {
     id: 3,
-    title: "TODO WEB APP",
-    image: "/image-portfolio-3.webp",
-    languages: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/todo-web-app",
+    title: "CS2 API",
+    image: "/cs2-api.png",
+    languages: ["JavaScript"],
+    live: "https://cs2-api.onrender.com/",
+    code: "https://github.com/Nohan-V2/CS2-API",
   },
   {
     id: 4,
-    title: "ENTERTAINMENT WEB APP",
-    image: "/image-portfolio-4.webp",
-    languages: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/entertainment-web-app",
+    title: "ROUND TO 8PX",
+    image: "/round-to-8px.png",
+    languages: ["TypeScript"],
+    live: "https://github.com/Nohan-V2/nohan.round-to-8px-0.0.1/releases/tag/vsix",
+    code: "https://github.com/Nohan-V2/nohan.round-to-8px-0.0.1",
   },
   {
     id: 5,
-    title: "MEMORY GAME",
-    image: "/image-portfolio-5.webp",
+    title: "SPEED DRAW",
+    image: "/speed-draw.png",
     languages: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/memory-game",
+    live: "https://nohan-v2.github.io/Speed-Draw",
+    code: "https://github.com/Nohan-V2/Speed-Draw",
   },
   {
     id: 6,
-    title: "ART GALLERY SHOWCASE",
-    image: "/image-portfolio-6.webp",
+    title: "ARC MAIL",
+    image: "/arc-mail.png",
     languages: ["HTML", "CSS", "JavaScript"],
-    live: "#",
-    code: "https://github.com/Nohan-V2/art-gallery-showcase",
+    live: "https://nohan-v2.github.io/ARC-Mail",
+    code: "https://github.com/Nohan-V2/ARC-Mail",
   },
 ];
 
@@ -72,13 +72,15 @@ function Projects() {
       <ul className="projects-list grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
         {projects.map((project) => (
           <li className="project-item flex flex-col group" key={project.id}>
-            <div class="relative">
-              <img
-                className="project-image w-full object-cover mb-5 group-hover:opacity-25 transition-opacity duration-300"
-                src={project.image}
-                alt={project.title}
-              />
-              <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="relative">
+              <div className="project-image-wrapper md:h-80 w-full overflow-hidden mb-5">
+                <img
+                  className="project-image w-full h-full object-cover group-hover:opacity-25 transition-opacity duration-300"
+                  src={project.image}
+                  alt={project.title}
+                />
+              </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a
                   href={project.live}
                   target="_blank"
