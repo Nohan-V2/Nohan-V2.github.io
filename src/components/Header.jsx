@@ -32,7 +32,11 @@ function Header() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/nolann-seck-727873398/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 className="image-nav-item group"
                 width="20"

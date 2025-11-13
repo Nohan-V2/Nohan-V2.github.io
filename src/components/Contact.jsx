@@ -233,7 +233,7 @@ function Contact() {
             </li>
             <li className="footer-social-item">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/nolann-seck-727873398/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-social-link"
