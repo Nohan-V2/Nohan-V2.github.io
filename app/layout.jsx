@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Nohan-V2",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className="font-space bg-[#151515] text-white min-h-screen">
         {children}
+        <Analytics />
       </body>
     </html>
   );
