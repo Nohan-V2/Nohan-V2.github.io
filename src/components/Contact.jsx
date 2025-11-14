@@ -43,7 +43,7 @@ function Contact() {
 
       setStatus("loading");
       emailjs
-        .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+        .send(SERVICE_ID, TEMPLATE_ID, formData, { publicKey: PUBLIC_KEY })
         .then(() => {
           setFormData({ name: "", email: "", message: "" });
           setStatus("success");

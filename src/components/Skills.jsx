@@ -65,7 +65,7 @@ const skills = [
 
 function Skills() {
   return (
-    <ul className="skill-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-8 md:gap-y-14 border-t border-b border-white max-w-[1440px] py-10 w-11/12 md:border-b-0">
+    <ul className="skill-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-x-8 md:gap-y-14 border-t border-b border-white max-w-[1440px] py-10 w-11/12">
       {skills.map((skill) => (
         <li
           className="skill-item flex flex-col items-center md:items-start"
